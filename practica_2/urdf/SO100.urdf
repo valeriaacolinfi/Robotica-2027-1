@@ -91,6 +91,72 @@
     </visual>
 </link> 
 
+</link>
+
+    <!--cajita del sistema 1-->
+<link name="shoulder_link">
+    <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <mesh filename="Shoulder_Rotation_Pitch.STL" scale="1 1 1"/>
+                    <!--CYLINDER, MESH O BOX, AGUAS CON LA DOBLE ETIQUETA-->
+        </geometry>
+    </visual>
+</link>
+
+<link name="UpperArm_link">
+    <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <mesh filename="Upper_Arm.STL" scale="1 1 1"/>
+                    <!--CYLINDER, MESH O BOX, AGUAS CON LA DOBLE ETIQUETA-->
+        </geometry>
+    </visual>
+</link>
+
+<link name="LowerArm_link">
+    <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0 0.0 0.0"/>
+        <geometry>
+            <mesh filename="Lower_Arm.STL" scale="1 1 1"/>
+                    <!--CYLINDER, MESH O BOX, AGUAS CON LA DOBLE ETIQUETA-->
+        </geometry>
+    </visual>
+</link>  
+
+
+<link name="WristPitchRoll_link">
+    <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0 0.0 0.0"/>
+        <geometry>
+            <mesh filename="Wrist_Pitch_Roll.STL" scale="1 1 1"/>
+                    <!--CYLINDER, MESH O BOX, AGUAS CON LA DOBLE ETIQUETA-->
+        </geometry>
+    </visual>
+</link>  
+
+
+<link name="FixedGripper_link">
+    <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0 0.0 0.0"/>
+        <geometry>
+            <mesh filename="Fixed_Gripper.STL" scale="1 1 1"/>
+                    <!--CYLINDER, MESH O BOX, AGUAS CON LA DOBLE ETIQUETA-->
+        </geometry>
+    </visual>
+</link> 
+
+
+<link name="MovingJaw_link">
+    <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0 0.0 0.0"/>
+        <geometry>
+            <mesh filename="Moving_Jaw.STL" scale="1 1 1"/>
+                    <!--CYLINDER, MESH O BOX, AGUAS CON LA DOBLE ETIQUETA-->
+        </geometry>
+    </visual>
+</link> 
+
 <!--1joint-->
 <joint name="shoulder_joint" type="revolute">
     <origin xyz="0.0 -0.045 0.016" rpy="1.57 0.0 0.0"/>
@@ -159,74 +225,6 @@
     <!--limites en radianes -->
     <limit lower="-3.14" upper="3.14" effort="1.0" velocity="10.0"/> <!-- velocity en rad/s-->
 </joint>
-
-</robot>
-
-</link>
-
-    <!--cajita del sistema 1-->
-<link name="shoulder_link">
-    <visual>
-        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
-        <geometry>
-            <mesh filename="Shoulder_Rotation_Pitch.STL" scale="1 1 1"/>
-                    <!--CYLINDER, MESH O BOX, AGUAS CON LA DOBLE ETIQUETA-->
-        </geometry>
-    </visual>
-</link>
-
-<link name="UpperArm_link">
-    <visual>
-        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
-        <geometry>
-            <mesh filename="Upper_Arm.STL" scale="1 1 1"/>
-                    <!--CYLINDER, MESH O BOX, AGUAS CON LA DOBLE ETIQUETA-->
-        </geometry>
-    </visual>
-</link>
-
-<link name="LowerArm_link">
-    <visual>
-        <origin xyz="0.0 0.0 0.0" rpy="0 0.0 0.0"/>
-        <geometry>
-            <mesh filename="Lower_Arm.STL" scale="1 1 1"/>
-                    <!--CYLINDER, MESH O BOX, AGUAS CON LA DOBLE ETIQUETA-->
-        </geometry>
-    </visual>
-</link>  
-
-
-<link name="WristPitchRoll_link">
-    <visual>
-        <origin xyz="0.0 0.0 0.0" rpy="0 0.0 0.0"/>
-        <geometry>
-            <mesh filename="Wrist_Pitch_Roll.STL" scale="1 1 1"/>
-                    <!--CYLINDER, MESH O BOX, AGUAS CON LA DOBLE ETIQUETA-->
-        </geometry>
-    </visual>
-</link>  
-
-
-<link name="FixedGripper_link">
-    <visual>
-        <origin xyz="0.0 0.0 0.0" rpy="0 0.0 0.0"/>
-        <geometry>
-            <mesh filename="Fixed_Gripper.STL" scale="1 1 1"/>
-                    <!--CYLINDER, MESH O BOX, AGUAS CON LA DOBLE ETIQUETA-->
-        </geometry>
-    </visual>
-</link> 
-
-
-<link name="MovingJaw_link">
-    <visual>
-        <origin xyz="0.0 0.0 0.0" rpy="0 0.0 0.0"/>
-        <geometry>
-            <mesh filename="Moving_Jaw.STL" scale="1 1 1"/>
-                    <!--CYLINDER, MESH O BOX, AGUAS CON LA DOBLE ETIQUETA-->
-        </geometry>
-    </visual>
-</link> 
 
 <!--1joint-->
 <joint name="shoulder_joint" type="revolute">
